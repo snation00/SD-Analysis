@@ -9,9 +9,9 @@ Bundler.require(:default)
 $LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
 require 'data_loader'
 
-DataLoader.setup('txamp_sim', true)
+DataLoader.setup('hss_sim', true)
 
-dir = './TXamp/'
+dir = './data/'
 dir = ARGV[0] if ARGV[0]
 
 Dir.glob(dir + '*.raw') do |file_name|
